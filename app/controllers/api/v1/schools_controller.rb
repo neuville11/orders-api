@@ -1,26 +1,17 @@
 class Api::V1::SchoolsController < ApplicationController
   def create
-    if school.save
-      render status: :created
-    else
-      render status: :unprocessable_entity
-    end
+    school.save
+    render json: school, status: :created
   end
 
   def update
-    if school.update(school_params)
-      render status: :ok
-    else
-      render status: :unprocessable_entity
-    end
+    school.update(school_params)
+    render json: school, status: :ok
   end
 
   def destroy
-    if school.destroy
-      render status: :ok
-    else
-      render status: :unprocessable_entity
-    end
+    school.destroy
+    render json: school, status: :ok
   end
 
   private
