@@ -1,3 +1,13 @@
+### What I was able to do
+1. Go to tests and check what are testing and use gems like FactoryBot and Faker to do not use instance methods on tests, this reduces execution time
+2. Addressed code smells using principles like DRY, memoization, tried to implemet serialization
+3. Added Test for the http requests
+4. Dockerfile
+
+### Ideas I couldnt implement
+1. deploy to heroku
+2. authentication token
+
 
 #### Instructions for running on local environment:
 
